@@ -1,35 +1,74 @@
+# Site Settings
 title: "Balbino Tchoutzine"
 description: "Étudiant en Génie Informatique - Passionné d'IA et de NLP"
-theme: minima
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-seo-tag
-
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "air"
+locale: "fr-FR"
+search: true
+search_full_content: true
 
-
-header_links:
-  - title: "Projets"
-    url: /projects
-  - title: "Engagement"
-    url: /engagement
-  - title: "Blog"
-    url: /blog
-  - title: "À propos"
-    url: /about
-
-
+# Author Info
 author:
   name: "Balbino Tchoutzine"
   avatar: "/assets/images/balbino.jpg"
+  bio: "Étudiant en Génie Informatique - Passionné d'IA et de NLP"
+  location: "Cameroun"
   links:
     - label: "GitHub"
-      icon: "fab fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/zoom-BT"
     - label: "LinkedIn"
-      icon: "fab fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/balbino-tchoutzine"
-    - label: "Email"
-      icon: "fas fa-envelope"
-      url: "mailto:tchoutzine@gmail.com"
+
+# Navigation
+navigation:
+  main:
+    - title: "Accueil"
+      url: /
+    - title: "Projets"
+      url: /projects/
+    - title: "Articles"
+      url: /articles/
+    - title: "Certifications"
+      url: /certifications/
+    - title: "À propos"
+      url: /about/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  certifications:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Analytics (à activer plus tard)
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "UA-XXXXXXXXX-X"
+
+# Comments (optionnel)
+# comments:
+#   provider: "disqus"
+#   disqus:
+#     shortname: "your-disqus-shortname"

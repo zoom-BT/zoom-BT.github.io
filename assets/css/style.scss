@@ -1,17 +1,88 @@
 ---
 ---
 
-// @import "{{ site.theme }}"; // Removed invalid SCSS import. Add a valid SCSS file path if needed, e.g.:
-// @import "theme";
-
-img {
-  border-radius: 50%;
+/* Variables */
+:root {
+  --primary-color: #0026cc;
+  --text-color: #333;
+  --background-light: #fff;
 }
 
+$primary-color: var(--primary-color);
+$text-color: var(--text-color);
+$background-light: var(--background-light);
+$shadow: 0 2px 5px rgba(0,0,0,0.1);
+$border-radius: 8px;
+$transition: transform 0.2s ease;
+
+// Base styles
+body {
+  color: $text-color;
+  line-height: 1.6;
+}
+
+// Profile images
+.profile-img {
+  border-radius: 50%;
+  max-width: 180px;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: $shadow;
+}
+
+// Navigation
 button.lang {
-  background-color: #0026cc;
+  background-color: $primary-color;
   color: white;
   padding: 5px 10px;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+// Certifications
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.certificate-card {
+  background: $background-light;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  padding: 1.5rem;
+  transition: $transition;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: $text-color;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-img {
+    max-width: 150px;
+  }
 }

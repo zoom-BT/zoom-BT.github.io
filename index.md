@@ -1,15 +1,41 @@
 ---
-layout: default
-title: "Accueil"
+layout: home
+author_profile: true
+classes:
+  - landing
+  - dark-theme
 ---
 
-<img src="/assets/images/balbino.jpg" alt="Balbino Tchoutzine" style="border-radius:50%; width:180px; display:block; margin:auto;" />
+{% include figure image_path="/assets/images/balbino.jpg" alt="Balbino Tchoutzine" class="profile-img" %}
 
 # Hello! Je suis **Balbino Tchoutzine**
 
-Étudiant en 4ᵉ année de Génie Informatique à l’**École Polytechnique de Yaoundé (Cameroun)**.  
-Je suis passionné par le **Machine Learning**, le **NLP** et l’application de l’IA aux langues africaines à faibles ressources.  
+Étudiant en Génie Informatique passionné par l'Intelligence Artificielle et le Traitement du Langage Naturel. Je m'intéresse particulièrement à l'application de ces technologies dans le contexte africain.
 
-Au-delà de mon parcours académique, je participe à des **communautés IA** (Cellule IA ENSPY, APOREN) et je contribue à des **projets pratiques et compétitions sur Zindi**.  
+## Domaines d'expertise
 
----
+- 🤖 Intelligence Artificielle
+- 🔤 Traitement du Langage Naturel (NLP)
+- 💻 Développement Web
+- 📊 Machine Learning
+
+## Projets récents
+
+{% assign projects = site.projects | sort: 'date' | reverse | limit: 3 %}
+<div class="grid__wrapper">
+  {% for project in projects %}
+    {% include project-card.html %}
+  {% endfor %}
+</div>
+
+## Derniers articles
+
+{% assign posts = site.posts | sort: 'date' | reverse | limit: 3 %}
+<div class="grid__wrapper">
+  {% for post in posts %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
+
+[Voir tous les articles](/articles/){: .btn .btn--primary}
+[Voir tous les projets](/projects/){: .btn .btn--info}
