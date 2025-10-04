@@ -1,0 +1,17 @@
+---
+---
+
+// @import "{{ site.theme }}"; // Removed invalid SCSS import. Add a valid SCSS file path if needed, e.g.:
+// @import "theme";
+
+img {
+  border-radius: 50%;
+}
+
+button.lang {
+  background-color: #0026cc;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+}

@@ -1,18 +1,15 @@
 ---
 layout: default
-title: "Welcome"
+title: "Accueil"
 ---
-# 👋 Hi, I'm Balbino Tchoutzine
 
-I'm a Computer Engineering student passionate about **Artificial Intelligence**, **Natural Language Processing**, and **AI applications for African languages**.
+<img src="/assets/images/balbino.jpg" alt="Balbino Tchoutzine" style="border-radius:50%; width:180px; display:block; margin:auto;" />
 
-I use this blog to share my learning journey, research insights, and AI projects that contribute to digital inclusion in Africa.
+# Hello! Je suis **Balbino Tchoutzine**
+
+Étudiant en 4ᵉ année de Génie Informatique à l’**École Polytechnique de Yaoundé (Cameroun)**.  
+Je suis passionné par le **Machine Learning**, le **NLP** et l’application de l’IA aux langues africaines à faibles ressources.  
+
+Au-delà de mon parcours académique, je participe à des **communautés IA** (Cellule IA ENSPY, APOREN) et je contribue à des **projets pratiques et compétitions sur Zindi**.  
 
 ---
-## 🧠 Featured Posts
-
-- [Building a Corpus for Medumba Translation](#)
-- [Understanding Overfitting and Underfitting](#)
-- [How AI Can Preserve African Languages](#)
-
-📫 **Contact:** [tchoutzine@gmail.com](mailto:tchoutzine@gmail.com)

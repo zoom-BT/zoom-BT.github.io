@@ -1,15 +1,35 @@
 title: "Balbino Tchoutzine"
-description: "AI, NLP, and African languages — reflections, research, and innovation."
-# On revient au thème minimal pour l'instant (laisser cette ligne pour la compatibilité)
-theme: jekyll-theme-minimal
-# On FORCE le thème Cayman (plus élégant et structuré)
-remote_theme: pages-themes/cayman@v0.2.0
-
-author: "Balbino Tchoutzine"
-url: "https://zoom-BT.github.io"
-github_username: zoom-BT
-
-# Optionnel, mais recommandé pour le SEO et le flux d'actualités
+description: "Étudiant en Génie Informatique - Passionné d'IA et de NLP"
+theme: minima
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+remote_theme: mmistakes/minimal-mistakes
+
+
+header_links:
+  - title: "Projets"
+    url: /projects
+  - title: "Engagement"
+    url: /engagement
+  - title: "Blog"
+    url: /blog
+  - title: "À propos"
+    url: /about
+
+
+author:
+  name: "Balbino Tchoutzine"
+  avatar: "/assets/images/balbino.jpg"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/zoom-BT"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/balbino-tchoutzine"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:tchoutzine@gmail.com"
