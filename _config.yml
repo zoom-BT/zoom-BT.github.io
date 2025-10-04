@@ -1,6 +1,7 @@
 title: "Balbino Tchoutzine"
 description: "AI, NLP, and African languages — reflections, research, and innovation."
 theme: jekyll-theme-minimal
+remote_theme: pages-themes/jekyll-theme-minimal
 author: "Balbino Tchoutzine"
 url: "https://zoom-BT.github.io"
 github_username: zoom-BT
