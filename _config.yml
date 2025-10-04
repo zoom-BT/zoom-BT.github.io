@@ -1,12 +1,15 @@
 title: "Balbino Tchoutzine"
 description: "AI, NLP, and African languages — reflections, research, and innovation."
+# On revient au thème minimal pour l'instant (laisser cette ligne pour la compatibilité)
 theme: jekyll-theme-minimal
-#remote_theme: pages-themes/jekyll-theme-minimal
+# On FORCE le thème Cayman (plus élégant et structuré)
+remote_theme: pages-themes/cayman@v0.2.0
+
 author: "Balbino Tchoutzine"
 url: "https://zoom-BT.github.io"
 github_username: zoom-BT
 
-# Optionnel, mais recommandé
+# Optionnel, mais recommandé pour le SEO et le flux d'actualités
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+ - jekyll-feed
+ - jekyll-seo-tag
